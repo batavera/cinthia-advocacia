@@ -23,7 +23,7 @@ export default function About() {
                             </div>
 
                             <h4 className="font-cinzel text-xl sm:text-2xl font-bold text-white mb-1">
-                                Dra. Cinthia Gagliardi
+                                Dra. Cinthia Fernanda Gagliardi
                             </h4>
                             <p className="text-xs text-[#D4AF37] uppercase tracking-[0.25em] font-semibold mb-6">
                                 OAB / SP - 143.109

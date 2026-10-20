@@ -49,7 +49,7 @@ export default function Contact() {
                                 </div>
                                 <div>
                                     <p className="text-[10px] text-[#D4AF37] uppercase tracking-wider font-semibold">Localização</p>
-                                    <p className="text-white text-sm font-medium">Atendimento Presencial & Online</p>
+                                    <p className="text-white text-sm font-medium">Atendimento Presencial em Catanduva - SP & Online</p>
                                 </div>
                             </div>
 
