@@ -16,7 +16,7 @@ export default function Navbar() {
                         <img
                             src={logoImg}
                             alt="Advocacia Gagliardi"
-                            className="h-16 sm:h-20 lg:h-24 w-auto object-contain mix-blend-screen transition-transform duration-300 group-hover:scale-105"
+                            className="h-16 sm:h-20 lg:h-24 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
                         />
                         <div className="hidden md:flex flex-col justify-center border-l border-[#D4AF37]/30 pl-3">
                             <span className="font-cinzel text-xs lg:text-sm tracking-[0.3em] text-slate-300 font-medium uppercase leading-none">

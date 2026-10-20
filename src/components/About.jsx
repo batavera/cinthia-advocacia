@@ -26,7 +26,7 @@ export default function About() {
                             <img
                                 src={logoImg}
                                 alt="Advocacia Gagliardi"
-                                className="w-52 sm:w-72 h-auto object-contain mix-blend-screen transition-transform duration-300 group-hover:scale-105"
+                                className="w-52 sm:w-72 h-auto object-contain transition-transform duration-300 group-hover:scale-105"
                             />
                         </div>
 
