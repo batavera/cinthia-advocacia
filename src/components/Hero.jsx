@@ -19,7 +19,7 @@ export default function Hero() {
                         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#D4AF37]/30 bg-[#D4AF37]/5 text-[#D4AF37]">
                             <Scale size={16} />
                             <span className="text-[11px] font-semibold uppercase tracking-widest">
-                                Advocacia Especializada & Estratégica
+                                Advocacia Especializada & Informativa
                             </span>
                         </div>
 
@@ -30,9 +30,9 @@ export default function Hero() {
                             <span className="gold-gradient-text">Alto Rigor Técnico</span>
                         </h1>
 
-                        {/* Subtítulo / Descrição */}
+                        {/* Subtítulo Sóbrio e Informativo (Sem promessa de resultado) */}
                         <p className="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
-                            Atendimento exclusivo para pessoas e empresas que buscam soluções estratégicas, agilidade e máxima segurança jurídica na proteção de seus direitos.
+                            Atendimento informativo e técnico para pessoas e empresas que necessitam de orientação jurídica estratégica e atuação qualificada na defesa de seus direitos.
                         </p>
 
                         {/* Botões de Ação */}
@@ -55,14 +55,14 @@ export default function Hero() {
                             </a>
                         </div>
 
-                        {/* Destaques do Hero - 3 Colunas Compactas Lado a Lado no Mobile e Desktop */}
+                        {/* Destaques do Hero - Adequados ao Provimento 205/2021 */}
                         <div className="grid grid-cols-3 gap-2 sm:gap-4 pt-6 sm:pt-8 border-t border-[#D4AF37]/20">
                             <div className="text-center lg:text-left">
                                 <h3 className="font-cinzel text-[11px] sm:text-lg font-bold gold-gradient-text uppercase tracking-wider">
-                                    Excelência
+                                    Rigor Técnico
                                 </h3>
                                 <p className="text-[9px] sm:text-xs text-slate-400 uppercase tracking-tight sm:tracking-widest mt-0.5 sm:mt-1">
-                                    Soluções sob medida
+                                    Análise detalhada
                                 </p>
                             </div>
 
@@ -71,16 +71,16 @@ export default function Hero() {
                                     Sigilo
                                 </h3>
                                 <p className="text-[9px] sm:text-xs text-slate-400 uppercase tracking-tight sm:tracking-widest mt-0.5 sm:mt-1">
-                                    Privacidade garantida
+                                    Dever profissional
                                 </p>
                             </div>
 
                             <div className="text-center lg:text-left">
                                 <h3 className="font-cinzel text-[11px] sm:text-lg font-bold gold-gradient-text uppercase tracking-wider">
-                                    Compromisso
+                                    Eficiência
                                 </h3>
                                 <p className="text-[9px] sm:text-xs text-slate-400 uppercase tracking-tight sm:tracking-widest mt-0.5 sm:mt-1">
-                                    Acompanhamento direto
+                                    Condução do caso
                                 </p>
                             </div>
                         </div>

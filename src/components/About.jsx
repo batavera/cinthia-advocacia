@@ -18,11 +18,10 @@ export default function About() {
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
-                    {/* Cartão com Logo em Destaque Expandido */}
+                    {/* Cartão do Escritório */}
                     <div className="lg:col-span-5 bg-[#0F0F14] border border-[#D4AF37]/30 rounded-lg p-8 text-center relative group shadow-2xl">
                         <div className="absolute inset-0 bg-gradient-to-b from-[#D4AF37]/5 to-transparent opacity-50 rounded-lg pointer-events-none"></div>
 
-                        {/* Logo em Largura Fixa e Destacada */}
                         <div className="flex justify-center mb-6">
                             <img
                                 src={logoImg}
@@ -41,33 +40,34 @@ export default function About() {
                         <div className="w-12 h-[1px] bg-[#D4AF37]/40 mx-auto my-6"></div>
 
                         <p className="text-slate-300 text-sm italic font-light leading-relaxed">
-                            "Atuação pautada pela ética, rigor técnico e compromisso inegociável com a defesa dos direitos dos meus clientes."
+                            "Atuação pautada pela ética, rigor técnico e compromisso com a defesa dos direitos dos meus clientes."
                         </p>
                     </div>
 
-                    {/* Texto de Apresentação */}
+                    {/* Texto de Apresentação Sem Termos Mercantilistas */}
                     <div className="lg:col-span-7 space-y-6 text-slate-300 text-sm sm:text-base leading-relaxed">
                         <p>
-                            A <strong className="text-white font-medium">Advocacia Gagliardi</strong> foi estruturada para oferecer soluções jurídicas estratégicas com alto padrão de excelência, transparência e sigilo absoluto.
+                            A <strong className="text-white font-medium">Advocacia Gagliardi</strong> foi estruturada para oferecer suporte jurídico qualificado com alto padrão de excelência, transparência e estrito sigilo profissional.
                         </p>
                         <p>
-                            Com sólida formação técnica e atendimento humanizado, atuamos preventivamente e no contencioso, garantindo que cada caso receba análise minuciosa e acompanhamento dedicado do início ao fim.
+                            Com sólida formação técnica e atendimento personalizado, atuamos preventivamente e no contencioso, proporcionando análise minuciosa e acompanhamento dedicado em cada etapa do processo.
                         </p>
                         <p>
-                            Atendemos presencialmente em <strong className="text-white font-medium">Catanduva e região</strong>, além de prestarmos suporte jurídico integral 100% online para todo o Brasil.
+                            Atendemos presencialmente em <strong className="text-white font-medium">Catanduva e região</strong>, além de prestarmos suporte jurídico integral online para todo o Brasil.
                         </p>
 
+                        {/* Destaques com Linguagem Sóbria e Ética */}
                         <div className="pt-4 grid grid-cols-3 gap-2 sm:gap-4 border-t border-[#D4AF37]/15 text-center">
                             <div>
-                                <p className="font-cinzel text-base sm:text-2xl font-bold gold-gradient-text">100%</p>
-                                <p className="text-[9px] sm:text-xs text-slate-400 mt-1 uppercase tracking-wider">Sigilo & Ética</p>
+                                <p className="font-cinzel text-sm sm:text-xl font-bold gold-gradient-text uppercase">Ética</p>
+                                <p className="text-[9px] sm:text-xs text-slate-400 mt-1 uppercase tracking-wider">Sigilo Profissional</p>
                             </div>
                             <div>
-                                <p className="font-cinzel text-base sm:text-2xl font-bold gold-gradient-text">Agilidade</p>
-                                <p className="text-[9px] sm:text-xs text-slate-400 mt-1 uppercase tracking-wider">Atendimento Direto</p>
+                                <p className="font-cinzel text-sm sm:text-xl font-bold gold-gradient-text uppercase">Eficiência</p>
+                                <p className="text-[9px] sm:text-xs text-slate-400 mt-1 uppercase tracking-wider">Condução do Caso</p>
                             </div>
                             <div>
-                                <p className="font-cinzel text-base sm:text-2xl font-bold gold-gradient-text">Nacional</p>
+                                <p className="font-cinzel text-sm sm:text-xl font-bold gold-gradient-text uppercase">Atuação</p>
                                 <p className="text-[9px] sm:text-xs text-slate-400 mt-1 uppercase tracking-wider">Presencial e Online</p>
                             </div>
                         </div>
