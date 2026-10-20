@@ -55,31 +55,31 @@ export default function Hero() {
                             </a>
                         </div>
 
-                        {/* Destaques do Hero - Empilhado no Mobile (1 col) e Lado a Lado no Desktop (3 cols) */}
-                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-4 pt-8 border-t border-[#D4AF37]/20">
+                        {/* Destaques do Hero - 3 Colunas Compactas Lado a Lado no Mobile e Desktop */}
+                        <div className="grid grid-cols-3 gap-2 sm:gap-4 pt-6 sm:pt-8 border-t border-[#D4AF37]/20">
                             <div className="text-center lg:text-left">
-                                <h3 className="font-cinzel text-base sm:text-lg font-bold gold-gradient-text uppercase tracking-wider">
+                                <h3 className="font-cinzel text-[11px] sm:text-lg font-bold gold-gradient-text uppercase tracking-wider">
                                     Excelência
                                 </h3>
-                                <p className="text-xs text-slate-400 uppercase tracking-widest mt-1">
+                                <p className="text-[9px] sm:text-xs text-slate-400 uppercase tracking-tight sm:tracking-widest mt-0.5 sm:mt-1">
                                     Soluções sob medida
                                 </p>
                             </div>
 
                             <div className="text-center lg:text-left">
-                                <h3 className="font-cinzel text-base sm:text-lg font-bold gold-gradient-text uppercase tracking-wider">
+                                <h3 className="font-cinzel text-[11px] sm:text-lg font-bold gold-gradient-text uppercase tracking-wider">
                                     Sigilo
                                 </h3>
-                                <p className="text-xs text-slate-400 uppercase tracking-widest mt-1">
+                                <p className="text-[9px] sm:text-xs text-slate-400 uppercase tracking-tight sm:tracking-widest mt-0.5 sm:mt-1">
                                     Privacidade garantida
                                 </p>
                             </div>
 
                             <div className="text-center lg:text-left">
-                                <h3 className="font-cinzel text-base sm:text-lg font-bold gold-gradient-text uppercase tracking-wider">
+                                <h3 className="font-cinzel text-[11px] sm:text-lg font-bold gold-gradient-text uppercase tracking-wider">
                                     Compromisso
                                 </h3>
-                                <p className="text-xs text-slate-400 uppercase tracking-widest mt-1">
+                                <p className="text-[9px] sm:text-xs text-slate-400 uppercase tracking-tight sm:tracking-widest mt-0.5 sm:mt-1">
                                     Acompanhamento direto
                                 </p>
                             </div>
