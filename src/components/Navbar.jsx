@@ -9,20 +9,20 @@ export default function Navbar() {
     return (
         <nav className="fixed w-full z-50 bg-[#08080A]/95 backdrop-blur-md border-b border-[#D4AF37]/20 transition-all duration-300">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex items-center justify-between h-20 sm:h-24">
+                <div className="flex items-center justify-between h-24 sm:h-28">
 
-                    {/* Logo & Marca Ampliados e Nítidos */}
-                    <a href="#inicio" className="flex items-center gap-3 sm:gap-4 group">
+                    {/* Logo do Topo com Destaque Real */}
+                    <a href="#inicio" className="flex items-center gap-3 sm:gap-4 group py-2">
                         <img
                             src={logoImg}
                             alt="Advocacia Gagliardi"
-                            className="h-14 sm:h-16 lg:h-20 w-auto object-contain mix-blend-screen transition-transform duration-300 group-hover:scale-105"
+                            className="h-16 sm:h-20 lg:h-24 w-auto object-contain mix-blend-screen transition-transform duration-300 group-hover:scale-105"
                         />
                         <div className="flex flex-col justify-center border-l border-[#D4AF37]/30 pl-3 sm:pl-4">
-                            <span className="font-cinzel text-[11px] sm:text-xs lg:text-sm tracking-[0.3em] text-slate-300 font-medium uppercase leading-none">
+                            <span className="font-cinzel text-xs sm:text-sm lg:text-base tracking-[0.3em] text-slate-300 font-medium uppercase leading-none">
                                 Advocacia
                             </span>
-                            <span className="font-cinzel text-base sm:text-lg lg:text-xl tracking-[0.2em] gold-gradient-text font-bold uppercase mt-1 leading-none">
+                            <span className="font-cinzel text-lg sm:text-xl lg:text-2xl tracking-[0.2em] gold-gradient-text font-bold uppercase mt-1.5 leading-none">
                                 Gagliardi
                             </span>
                         </div>
@@ -56,51 +56,21 @@ export default function Navbar() {
                             className="p-2 rounded text-[#D4AF37] hover:bg-[#16161E] transition-colors"
                             aria-label="Abrir menu"
                         >
-                            {isOpen ? <X size={28} /> : <Menu size={28} />}
+                            {isOpen ? <X size={30} /> : <Menu size={30} />}
                         </button>
                     </div>
                 </div>
             </div>
 
-            {/* Menu Mobile Expandido */}
+            {/* Menu Mobile */}
             {isOpen && (
                 <div className="lg:hidden bg-[#0F0F14] border-b border-[#D4AF37]/20 px-4 pt-4 pb-6 space-y-4">
                     <div className="flex flex-col space-y-3 text-sm uppercase tracking-widest font-medium text-slate-300">
-                        <a
-                            href="#inicio"
-                            onClick={() => setIsOpen(false)}
-                            className="py-2 border-b border-slate-800/50 hover:text-[#D4AF37] transition-colors"
-                        >
-                            Início
-                        </a>
-                        <a
-                            href="#sobre"
-                            onClick={() => setIsOpen(false)}
-                            className="py-2 border-b border-slate-800/50 hover:text-[#D4AF37] transition-colors"
-                        >
-                            O Escritório
-                        </a>
-                        <a
-                            href="#servicos"
-                            onClick={() => setIsOpen(false)}
-                            className="py-2 border-b border-slate-800/50 hover:text-[#D4AF37] transition-colors"
-                        >
-                            Atuação
-                        </a>
-                        <a
-                            href="#diferenciais"
-                            onClick={() => setIsOpen(false)}
-                            className="py-2 border-b border-slate-800/50 hover:text-[#D4AF37] transition-colors"
-                        >
-                            Diferenciais
-                        </a>
-                        <a
-                            href="#contato"
-                            onClick={() => setIsOpen(false)}
-                            className="py-2 hover:text-[#D4AF37] transition-colors"
-                        >
-                            Contato
-                        </a>
+                        <a href="#inicio" onClick={() => setIsOpen(false)} className="py-2 border-b border-slate-800/50 hover:text-[#D4AF37]">Início</a>
+                        <a href="#sobre" onClick={() => setIsOpen(false)} className="py-2 border-b border-slate-800/50 hover:text-[#D4AF37]">O Escritório</a>
+                        <a href="#servicos" onClick={() => setIsOpen(false)} className="py-2 border-b border-slate-800/50 hover:text-[#D4AF37]">Atuação</a>
+                        <a href="#diferenciais" onClick={() => setIsOpen(false)} className="py-2 border-b border-slate-800/50 hover:text-[#D4AF37]">Diferenciais</a>
+                        <a href="#contato" onClick={() => setIsOpen(false)} className="py-2 hover:text-[#D4AF37]">Contato</a>
                     </div>
                     <a
                         href={getWhatsAppUrl('geral')}
