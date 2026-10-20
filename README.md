@@ -1,16 +1,57 @@
-# React + Vite
+# 🏛️ Advocacia Gagliardi — Website Institucional Premium
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Um website institucional *one-page* de alto padrão ("Dark Luxury Aesthetic") desenvolvido para a **Advocacia Gagliardi** (Dra. Cinthia Gagliardi). O projeto foi concebido para transmitir autoridade, elegância e confiabilidade jurídica, otimizando a conversão de potenciais clientes por meio da integração direta com o WhatsApp.
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🌟 Recursos e Diferenciais
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Design System Luxury:** Paleta fundamentada em *Onyx Black* (`#08080A`) e detalhes em *Champagne Gold* (`#D4AF37`) com tipografia *Cinzel* e *Plus Jakarta Sans*.
+- **Integração Inteligente com WhatsApp:** Gerenciador central de links (`src/utils/whatsapp.js`) que injeta mensagens pré-formatadas e contextualizadas dependendo da seção ou do serviço selecionado.
+- **Layout 100% Responsivo:** Design adaptável otimizado para dispositivos móveis, tablets e desktops.
+- **Segurança e Proteção contra Bots:** Arquitetura estática sem banco de dados exposto, acompanhada de cabeçalhos de segurança HTTP configurados no `vercel.json` (proteção contra XSS, Clickjacking e MIME Sniffing).
+- **Desempenho Otimizado:** Build enxuto e carregamento ultrarrápido com suporte a CDN global na Vercel.
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 🛠️ Tecnologias Utilizadas
+
+- **Core:** [React 18](https://react.dev/) + [Vite](https://vitejs.dev/)
+- **Estilização:** [Tailwind CSS](https://tailwindcss.com/)
+- **Iconografia:** [Lucide React](https://lucide.dev/)
+- **Deploy & Hosting:** [Vercel](https://vercel.com/)
+
+---
+
+## 📂 Estrutura de Pastas
+
+```text
+cinthia-advocacia/
+├── public/
+│   ├── cinthia.jpg          # Imagem profissional da Dra. Cinthia
+│   └── icons.svg
+├── src/
+│   ├── assets/
+│   │   └── logo.png         # Emblema / Logotipo oficial em alta resolução
+│   ├── components/
+│   │   ├── Navbar.jsx       # Cabeçalho com menu responsivo e logo em destaque
+│   │   ├── Hero.jsx         # Seção principal de apresentação (Capa)
+│   │   ├── About.jsx        # Seção "O Escritório" com selo de autoridade
+│   │   ├── Services.jsx     # Seção de áreas de atuação com CTAs individuais
+│   │   ├── Differentials.jsx# Diferenciais competitivos e valores
+│   │   ├── Contact.jsx      # Formulário de contato direto e informações de atendimento
+│   │   └── Footer.jsx       # Rodapé institucional
+│   ├── utils/
+│   │   └── whatsapp.js      # Utilitário centralizador de mensagens do WhatsApp
+│   ├── App.jsx              # Componente principal da aplicação
+│   ├── index.css            # Configurações globais e gradientes do Tailwind CSS
+│   └── main.jsx             # Ponto de entrada React
+├── vercel.json              # Configurações de segurança e cabeçalhos HTTP
+├── tailwind.config.js       # Customização do design system no Tailwind
+├── vite.config.js           # Configurações de compilação do Vite
+└── package.json             # Dependências e scripts do projeto
