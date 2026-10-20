@@ -1,95 +1,113 @@
 import React from 'react';
-import { ArrowRight, Scale } from 'lucide-react';
+import { Scale, ArrowRight } from 'lucide-react';
 import { getWhatsAppLink } from '../utils/whatsapp';
+import cinthiaPhoto from '/cinthia.jpg';
 
 export default function Hero() {
     return (
-        <section id="inicio" className="relative min-h-screen pt-32 pb-20 flex items-center bg-[#08080A] text-white overflow-hidden border-b border-[#D4AF37]/15">
-
-            {/* Luz Dourada de Fundo */}
-            <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[550px] bg-[#D4AF37]/5 rounded-full blur-[130px] pointer-events-none"></div>
+        <section id="inicio" className="relative min-h-screen pt-28 sm:pt-36 pb-16 bg-[#08080A] flex items-center overflow-hidden">
+            {/* Luzes de Fundo / Ambient Glow */}
+            <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#D4AF37]/5 rounded-full blur-[120px] pointer-events-none"></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-                <div className="grid lg:grid-cols-12 gap-12 items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
 
-                    <div className="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    {/* Lado Esquerdo: Textos e Botões */}
+                    <div className="lg:col-span-7 space-y-6 sm:space-y-8 text-center lg:text-left">
 
-                        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#121216] border border-[#D4AF37]/30 text-[#D4AF37] text-xs font-semibold tracking-widest uppercase">
-                            <Scale size={14} />
-                            <span>Advocacia Especializada & Estratégica</span>
+                        {/* Tagline Badge */}
+                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#D4AF37]/30 bg-[#D4AF37]/5 text-[#D4AF37]">
+                            <Scale size={16} />
+                            <span className="text-[11px] font-semibold uppercase tracking-widest">
+                                Advocacia Especializada & Estratégica
+                            </span>
                         </div>
 
-                        <h1 className="font-cinzel text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-wide text-white">
-                            DEFESA JURÍDICA COM EXCELÊNCIA E <span className="gold-gradient-text">ALTO RIGOR TÉCNICO</span>
+                        {/* Título Principal */}
+                        <h1 className="font-cinzel text-3xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight uppercase tracking-wide">
+                            Defesa Jurídica <br className="hidden sm:inline" />
+                            com Excelência e <br className="hidden sm:inline" />
+                            <span className="gold-gradient-text">Alto Rigor Técnico</span>
                         </h1>
 
-                        <p className="text-slate-300 text-base sm:text-lg max-w-2xl font-light leading-relaxed mx-auto lg:mx-0">
+                        {/* Subtítulo / Descrição */}
+                        <p className="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
                             Atendimento exclusivo para pessoas e empresas que buscam soluções estratégicas, agilidade e máxima segurança jurídica na proteção de seus direitos.
                         </p>
 
-                        <div className="pt-2 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        {/* Botões de Ação */}
+                        <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
                             <a
-                                href={getWhatsAppLink("Olá! Preciso de uma análise para o meu caso jurídico.")}
+                                href={getWhatsAppLink('geral')}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-center justify-center gap-3 gold-button px-8 py-4 rounded-sm text-xs uppercase tracking-[0.15em]"
+                                className="w-full sm:w-auto px-8 py-4 rounded bg-gradient-to-r from-[#D4AF37] to-[#AA7C11] text-[#08080A] font-bold text-xs uppercase tracking-widest hover:brightness-110 transition-all shadow-xl shadow-[#D4AF37]/10 flex items-center justify-center gap-2 group"
                             >
-                                <span>Falar com o Escritório</span>
-                                <ArrowRight size={16} />
+                                Falar com o Escritório
+                                <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                             </a>
 
                             <a
                                 href="#servicos"
-                                className="flex items-center justify-center gap-2 bg-[#121216] hover:bg-[#1A1A20] border border-[#D4AF37]/30 hover:border-[#D4AF37] text-slate-200 font-medium px-8 py-4 rounded-sm transition-all text-xs uppercase tracking-[0.15em]"
+                                className="w-full sm:w-auto px-8 py-4 rounded border border-[#D4AF37]/30 text-white font-semibold text-xs uppercase tracking-widest hover:bg-[#D4AF37]/10 transition-all text-center"
                             >
-                                <span>Conhecer Atuação</span>
+                                Conhecer Atuação
                             </a>
                         </div>
 
-                        <div className="pt-10 border-t border-[#D4AF37]/15 grid grid-cols-3 gap-6 text-center lg:text-left">
-                            <div>
-                                <p className="font-cinzel text-xl sm:text-2xl font-bold gold-gradient-text">Excelência</p>
-                                <p className="text-[11px] text-slate-400 uppercase tracking-wider mt-1">Soluções Sob Medida</p>
+                        {/* Destaques do Hero - Empilhado no Mobile (1 col) e Lado a Lado no Desktop (3 cols) */}
+                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-4 pt-8 border-t border-[#D4AF37]/20">
+                            <div className="text-center lg:text-left">
+                                <h3 className="font-cinzel text-base sm:text-lg font-bold gold-gradient-text uppercase tracking-wider">
+                                    Excelência
+                                </h3>
+                                <p className="text-xs text-slate-400 uppercase tracking-widest mt-1">
+                                    Soluções sob medida
+                                </p>
                             </div>
-                            <div>
-                                <p className="font-cinzel text-xl sm:text-2xl font-bold gold-gradient-text">Sigilo</p>
-                                <p className="text-[11px] text-slate-400 uppercase tracking-wider mt-1">Privacidade Garantida</p>
+
+                            <div className="text-center lg:text-left">
+                                <h3 className="font-cinzel text-base sm:text-lg font-bold gold-gradient-text uppercase tracking-wider">
+                                    Sigilo
+                                </h3>
+                                <p className="text-xs text-slate-400 uppercase tracking-widest mt-1">
+                                    Privacidade garantida
+                                </p>
                             </div>
-                            <div>
-                                <p className="font-cinzel text-xl sm:text-2xl font-bold gold-gradient-text">Compromisso</p>
-                                <p className="text-[11px] text-slate-400 uppercase tracking-wider mt-1">Acompanhamento Direto</p>
+
+                            <div className="text-center lg:text-left">
+                                <h3 className="font-cinzel text-base sm:text-lg font-bold gold-gradient-text uppercase tracking-wider">
+                                    Compromisso
+                                </h3>
+                                <p className="text-xs text-slate-400 uppercase tracking-widest mt-1">
+                                    Acompanhamento direto
+                                </p>
                             </div>
                         </div>
 
                     </div>
 
-                    {/* Card Apresentando a Dra. Cinthia com Foto da pasta public */}
-                    <div className="lg:col-span-5 relative">
-                        <div className="relative mx-auto max-w-md bg-[#0D0D11] p-6 sm:p-8 rounded-sm border border-[#D4AF37]/30 text-center shadow-2xl">
+                    {/* Lado Direito: Foto da Dra. Cinthia Gagliardi */}
+                    <div className="lg:col-span-5 flex justify-center">
+                        <div className="relative w-full max-w-md bg-[#0F0F14] p-3 rounded-lg border border-[#D4AF37]/30 shadow-2xl group">
+                            <div className="absolute inset-0 bg-gradient-to-tr from-[#D4AF37]/10 to-transparent rounded-lg pointer-events-none"></div>
 
-                            {/* Moldura da Foto */}
-                            <div className="relative w-full aspect-[4/5] rounded-sm overflow-hidden mb-6 border border-[#D4AF37]/40 shadow-lg bg-[#16161E]">
+                            <div className="overflow-hidden rounded-md">
                                 <img
-                                    src="/cinthia.jpg"
-                                    alt="Dra. Cinthia Gagliardi"
-                                    className="w-full h-full object-cover object-top"
-                                    onError={(e) => {
-                                        // Fallback caso o arquivo seja .png
-                                        e.target.src = "/cinthia.png";
-                                    }}
+                                    src={cinthiaPhoto}
+                                    alt="Dra. Cinthia Fernanda Gagliardi"
+                                    className="w-full h-auto object-cover rounded-md transition-transform duration-500 group-hover:scale-105"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-[#0D0D11] via-transparent to-transparent opacity-40"></div>
                             </div>
 
-                            <h3 className="font-cinzel text-2xl font-bold text-white mb-1">Dra. Cinthia Gagliardi</h3>
-                            <p className="text-xs text-[#D4AF37] uppercase tracking-[0.2em] font-semibold mb-4">Advogada Founder</p>
-
-                            <div className="p-4 rounded bg-[#13131A] border border-[#D4AF37]/10">
-                                <p className="text-xs text-slate-300 italic leading-relaxed font-light">
-                                    "Atuação pautada pela ética, transparência e empenho absoluto na defesa dos direitos dos nossos clientes."
+                            <div className="mt-4 pb-2 text-center">
+                                <h3 className="font-cinzel text-lg font-bold text-white uppercase tracking-wider">
+                                    Dra. Cinthia Fernanda Gagliardi
+                                </h3>
+                                <p className="text-[#D4AF37] text-xs font-semibold tracking-widest uppercase mt-1">
+                                    OAB / SP - 143.109
                                 </p>
                             </div>
-
                         </div>
                     </div>
 
