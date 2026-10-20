@@ -57,18 +57,18 @@ export default function About() {
                             Atendemos presencialmente em <strong className="text-white font-medium">Catanduva e região</strong>, além de prestarmos suporte jurídico integral 100% online para todo o Brasil.
                         </p>
 
-                        <div className="pt-4 grid grid-cols-2 sm:grid-cols-3 gap-4 border-t border-[#D4AF37]/15">
+                        <div className="pt-4 grid grid-cols-3 gap-2 sm:gap-4 border-t border-[#D4AF37]/15 text-center">
                             <div>
-                                <p className="font-cinzel text-xl sm:text-2xl font-bold gold-gradient-text">100%</p>
-                                <p className="text-xs text-slate-400 mt-1 uppercase tracking-wider">Sigilo & Ética</p>
+                                <p className="font-cinzel text-base sm:text-2xl font-bold gold-gradient-text">100%</p>
+                                <p className="text-[9px] sm:text-xs text-slate-400 mt-1 uppercase tracking-wider">Sigilo & Ética</p>
                             </div>
                             <div>
-                                <p className="font-cinzel text-xl sm:text-2xl font-bold gold-gradient-text">Agilidade</p>
-                                <p className="text-xs text-slate-400 mt-1 uppercase tracking-wider">Atendimento Direto</p>
+                                <p className="font-cinzel text-base sm:text-2xl font-bold gold-gradient-text">Agilidade</p>
+                                <p className="text-[9px] sm:text-xs text-slate-400 mt-1 uppercase tracking-wider">Atendimento Direto</p>
                             </div>
-                            <div className="col-span-2 sm:col-span-1">
-                                <p className="font-cinzel text-xl sm:text-2xl font-bold gold-gradient-text">Nacional</p>
-                                <p className="text-xs text-slate-400 mt-1 uppercase tracking-wider">Presencial e Online</p>
+                            <div>
+                                <p className="font-cinzel text-base sm:text-2xl font-bold gold-gradient-text">Nacional</p>
+                                <p className="text-[9px] sm:text-xs text-slate-400 mt-1 uppercase tracking-wider">Presencial e Online</p>
                             </div>
                         </div>
                     </div>
