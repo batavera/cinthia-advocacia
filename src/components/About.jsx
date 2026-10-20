@@ -1,6 +1,5 @@
 import React from 'react';
 import logoImg from '../assets/logo.png';
-import cinthiaPhoto from '/cinthia.jpg';
 
 export default function About() {
     return (
@@ -19,16 +18,16 @@ export default function About() {
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
-                    {/* Cartão com Logo Expandido */}
+                    {/* Cartão com Logo em Destaque Expandido */}
                     <div className="lg:col-span-5 bg-[#0F0F14] border border-[#D4AF37]/30 rounded-lg p-8 text-center relative group shadow-2xl">
                         <div className="absolute inset-0 bg-gradient-to-b from-[#D4AF37]/5 to-transparent opacity-50 rounded-lg pointer-events-none"></div>
 
-                        {/* Logo do Cartão em Destaque */}
+                        {/* Logo em Largura Fixa e Destacada */}
                         <div className="flex justify-center mb-6">
                             <img
                                 src={logoImg}
                                 alt="Advocacia Gagliardi"
-                                className="h-28 sm:h-36 lg:h-40 w-auto object-contain mix-blend-screen transition-transform duration-300 group-hover:scale-105"
+                                className="w-52 sm:w-72 h-auto object-contain mix-blend-screen transition-transform duration-300 group-hover:scale-105"
                             />
                         </div>
 

@@ -11,18 +11,19 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-24 sm:h-28">
 
-                    {/* Logo do Topo com Destaque Real */}
-                    <a href="#inicio" className="flex items-center gap-3 sm:gap-4 group py-2">
+                    {/* Logo no Topo - Expandido no Telemóvel */}
+                    <a href="#inicio" className="flex items-center gap-3 group py-2">
                         <img
                             src={logoImg}
                             alt="Advocacia Gagliardi"
                             className="h-16 sm:h-20 lg:h-24 w-auto object-contain mix-blend-screen transition-transform duration-300 group-hover:scale-105"
                         />
-                        <div className="flex flex-col justify-center border-l border-[#D4AF37]/30 pl-3 sm:pl-4">
-                            <span className="font-cinzel text-xs sm:text-sm lg:text-base tracking-[0.3em] text-slate-300 font-medium uppercase leading-none">
+                        {/* O texto secundário só aparece em ecrãs maiores para não duplicar nem encolher a imagem no telemóvel */}
+                        <div className="hidden md:flex flex-col justify-center border-l border-[#D4AF37]/30 pl-3">
+                            <span className="font-cinzel text-xs lg:text-sm tracking-[0.3em] text-slate-300 font-medium uppercase leading-none">
                                 Advocacia
                             </span>
-                            <span className="font-cinzel text-lg sm:text-xl lg:text-2xl tracking-[0.2em] gold-gradient-text font-bold uppercase mt-1.5 leading-none">
+                            <span className="font-cinzel text-base lg:text-xl tracking-[0.2em] gold-gradient-text font-bold uppercase mt-1 leading-none">
                                 Gagliardi
                             </span>
                         </div>
