@@ -11,14 +11,13 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-24 sm:h-28">
 
-                    {/* Logo no Topo - Expandido no Telemóvel */}
+                    {/* Logo no Topo */}
                     <a href="#inicio" className="flex items-center gap-3 group py-2">
                         <img
                             src={logoImg}
                             alt="Advocacia Gagliardi"
                             className="h-16 sm:h-20 lg:h-24 w-auto object-contain mix-blend-screen transition-transform duration-300 group-hover:scale-105"
                         />
-                        {/* O texto secundário só aparece em ecrãs maiores para não duplicar nem encolher a imagem no telemóvel */}
                         <div className="hidden md:flex flex-col justify-center border-l border-[#D4AF37]/30 pl-3">
                             <span className="font-cinzel text-xs lg:text-sm tracking-[0.3em] text-slate-300 font-medium uppercase leading-none">
                                 Advocacia
